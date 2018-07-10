@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+:root{
+    font-family: 'Crimson Text', sans-serif;
+}
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .navbar {
+    width: 980px;
+}
+header .banner {
+    height: 500px;
+    width: 980px;
+}
+.banner img {
+    height: 500px;
+    width: 980px;
+    background-position: center;
+    background-size: cover;
+}
+.name {
+    position: relative;
+    top: -450px;
+    left: 40px;
+    width: 450px;
+}
+.phone {
+    position: relative;
+    top: -150px;
+    left: 800px;
+    width: 250px
+}
+.grid-container {
+	display: grid;
+    grid-gap: 10px;
+	grid-template-columns: 365px 300px 300px;
+	grid-template-areas:
+    "header  header  header"
+	"sidebar content content"
+	"footer  footer  footer";
+	background-color: #e91e6300;
+	color: #240909;
+}
+.quote {
+    grid-area: sidebar;
+}
+.my_photo {
+    grid-area: content;
+    position: relative;
+}
+.text {
+    grid-area: header;
+}
+.my_text {
+    grid-area: footer;
+}
+main #services {
+    width: 600px;
+    margin-left: 200px;
+    margin-right: 100px;
+    border-left-width: 80px;
+}
