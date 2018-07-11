@@ -6,7 +6,6 @@ body {
     max-width: 980px;
     margin: auto;
 }
-
 header .navbar {
     width: 980px;
 }
@@ -61,4 +60,8 @@ main #services {
     margin-left: 200px;
     margin-right: 100px;
     border-left-width: 80px;
+}
+main .our_services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
