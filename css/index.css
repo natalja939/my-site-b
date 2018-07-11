@@ -7,6 +7,7 @@ body {
     margin: auto;
 }
 header .navbar {
+    position: fixed;
     width: 980px;
 }
 header .banner {
@@ -21,7 +22,7 @@ header .banner {
 }
 .name {
     position: relative;
-    top: -450px;
+    top: -400px;
     left: 40px;
     width: 450px;
 }
@@ -37,13 +38,18 @@ header .banner {
 	grid-template-columns: 365px 300px 300px;
 	grid-template-areas:
     "header  header  header"
-	"sidebar content content"
-	"footer  footer  footer";
+	"sidebar content content";
 	background-color: #e91e6300;
 	color: #240909;
 }
 .quote {
     grid-area: sidebar;
+}
+.quote p {
+    margin-bottom: 18px;
+    margin-left: 80px;
+    margin-top: 18px;
+    margin-right: 18px;
 }
 .my_photo {
     grid-area: content;
@@ -52,13 +58,13 @@ header .banner {
 .text {
     grid-area: header;
 }
-.my_text {
-    grid-area: footer;
-}
+
 main #services {
     width: 600px;
     margin-left: 200px;
     margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-left-width: 80px;
 }
 main .my_services {
@@ -76,4 +82,30 @@ main .my_services h2 {
 main .my_services p {
     width: 450px;
     margin-left: 20px;
+}
+#contacts {
+    width: 450px;
+    margin-left: 300px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+main .social_networks {
+}
+
+main .contact_me {
+    width: 450px;
+    margin-left: 350px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+main .write {
+    width: 450px;
+    margin-left: 330px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main .container img {
+    width: 250px;
 }
