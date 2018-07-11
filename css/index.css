@@ -61,7 +61,19 @@ main #services {
     margin-right: 100px;
     border-left-width: 80px;
 }
-main .our_services {
+main .my_services {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 980px;
+}
+main .my_services img {
+    width: 450px;
+    margin-left: 20px;
+}
+main .my_services h2 {
+    margin-left: 200px;
+}
+main .my_services p {
+    width: 450px;
+    margin-left: 20px;
 }
