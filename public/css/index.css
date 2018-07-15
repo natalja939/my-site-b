@@ -29,53 +29,27 @@ header .banner {
     margin-left: 50px;
     color: white;
 }
-
-
-
-
-
-
-
-.grid-container {
-    display: grid;
-    grid-gap: 10px;
-	grid-template-columns: 365px 300px 300px;
-	grid-template-areas:
-    "header  header  header"
-	"sidebar content content";
-	background-color: #e91e6300;
-	color: #240909;
-}
-.quote {
-    grid-area: sidebar;
-}
-.quote p {
-    margin-bottom: 18px;
-    margin-left: 80px;
-    margin-top: 18px;
-    margin-right: 18px;
-}
-.my_photo {
-    grid-area: content;
-    position: relative;
-}
-.text {
-    grid-area: header;
-}
-.about {
+main .about .text {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: space-between;
+    width: 100%;
+    margin-left: 40px;
+}
+main .quote {
+   display: flex;
+   width: 100%;
+   margin-left: 450px;
+}
+  main .my_text {
+    display: flex;
+    width: 100%;
+    margin-left: 40px;
+    margin-bottom: 40px;
 }
 main #services {
-    width: 600px;
-    margin-left: 200px;
-    margin-right: 100px;
-    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content:center;
     margin-bottom: 20px;
-    border-left-width: 80px;
 }
 main .carousel slide {
     display: flex;
@@ -83,9 +57,7 @@ main .carousel slide {
 }
 .carousel-caption {
     display: flex;
-   
     color: black;
-    
 }
 #contacts {
     display: flex;
@@ -101,11 +73,11 @@ main .social_networks {
     margin-bottom: 40px;
     margin-top: 40px;
 }
-
 main .contact_me {
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-left: 100px;
     margin-bottom: 10px;
     margin-top: 40px;
     margin-right: 20px;
@@ -113,32 +85,54 @@ main .contact_me {
 main .write {
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-left: 120px;
     margin-bottom: 20px;
     margin-right: 20px;
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
-
 }
 main .container img {
     width: 250px;
 }
-
 main .container {
-     display: flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
 }
-
-
-
-
+.sample-form {
+    position: relative;
+    margin: 20px auto;
+    padding: 10px;
+    width: 450px;
+    height: 250px;
+    background: #f1e3e3;
+    border: 1px solid #1a080c;
+    border-bottom-color: #ab2540;
+    border-radius: 0px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.contact_name {
+    width: 250px;
+    margin-left: 100px; 
+}
+.contact_email {
+    width: 250px;
+    margin-left: 90px; 
+}
+.contact_text {
+    width: 250px;
+    height: 100px;
+    margin-left: 17px; 
+}
+.contact_button {
+    margin-left: 30%;
+}
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -163,14 +157,11 @@ footer .work_day {
     margin-right: 40px;
     margin-top: 20px;
 }
-
 .link {
     display: flex;
     justify-content: space-around;
     width: 100%;
-     background-color: #a4112f;
-
-
+    background-color: #a4112f;
 }
 .copyright {
     display: flex;
